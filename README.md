@@ -14,3 +14,6 @@ py src\main\main.py
 ```
 The application should then run, and follow the prompts provided.
 
+# Usage Instructions
+
+All prompts should be self-explanatory, but if you feel that there is clarity issue (as I'm sure there might be), feel free to submit a pull request :)
