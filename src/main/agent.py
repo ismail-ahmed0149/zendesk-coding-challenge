@@ -17,13 +17,13 @@ class Agent:
     _pwd: str
     _tickets: list[Ticket]
 
-    def __init__(self) -> None:
-        self._usr = ''
-        self._subdomain = ''
-        self._pwd = '' 
+    def __init__(self, subdomain: str = '', usr: str = '', pwd: str = '', ) -> None:
+        self._subdomain = subdomain 
+        self._usr = usr 
+        self._pwd = pwd 
 
 
-    def get_all_tickets(self) -> None:
+    def set_all_tickets(self) -> None:
          
         response = requests.get(self._url, auth=(self._email, self._pwd))
         # Check for HTTP codes other than 200
